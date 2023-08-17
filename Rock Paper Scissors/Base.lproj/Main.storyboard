@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFd-Mm-pik">
+                                <rect key="frame" x="16" y="425" width="99" height="115"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="👊">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2z0-Nx-XKB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Kyn-UB-Tlt">
+                                <rect key="frame" x="146" y="425" width="99" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✋">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tva-s3-ucy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBO-RH-5WW">
+                                <rect key="frame" x="129" y="653" width="137" height="44"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Play Again">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playagainPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QR0-To-1Vd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Up1-PO-iDk">
+                                <rect key="frame" x="16" y="330" width="359" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6hj-9b-WUM">
+                                <rect key="frame" x="117" y="143" width="157" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC2-Um-MfG">
+                                <rect key="frame" x="275" y="425" width="99" height="115"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✌️">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEU-Bt-EEK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Up1-PO-iDk" firstAttribute="centerX" secondItem="Kyn-UB-Tlt" secondAttribute="centerX" id="2U7-Og-560"/>
+                            <constraint firstItem="Up1-PO-iDk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4MY-Nj-TRa"/>
+                            <constraint firstItem="OC2-Um-MfG" firstAttribute="baseline" secondItem="Kyn-UB-Tlt" secondAttribute="baseline" id="7Ms-Gi-g5z"/>
+                            <constraint firstItem="Kyn-UB-Tlt" firstAttribute="leading" secondItem="uFd-Mm-pik" secondAttribute="trailing" constant="31" id="B8T-na-mI7"/>
+                            <constraint firstItem="Up1-PO-iDk" firstAttribute="centerX" secondItem="6hj-9b-WUM" secondAttribute="centerX" id="Fca-Xb-2uu"/>
+                            <constraint firstItem="Up1-PO-iDk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uFd-Mm-pik" secondAttribute="leading" id="H8I-3p-yce"/>
+                            <constraint firstItem="uFd-Mm-pik" firstAttribute="top" secondItem="Up1-PO-iDk" secondAttribute="bottom" constant="59" id="IdJ-cF-Jc5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uFd-Mm-pik" secondAttribute="bottom" constant="270" id="IqO-1O-xS0"/>
+                            <constraint firstItem="OC2-Um-MfG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kyn-UB-Tlt" secondAttribute="trailing" constant="8" symbolic="YES" id="RmG-Jr-wDp"/>
+                            <constraint firstItem="uFd-Mm-pik" firstAttribute="baseline" secondItem="Kyn-UB-Tlt" secondAttribute="baseline" id="YLt-AN-Hno"/>
+                            <constraint firstItem="Up1-PO-iDk" firstAttribute="top" secondItem="6hj-9b-WUM" secondAttribute="bottom" constant="71" id="ZDH-pE-gll"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kBO-RH-5WW" secondAttribute="bottom" constant="113" id="a5Q-ND-wPC"/>
+                            <constraint firstItem="OC2-Um-MfG" firstAttribute="baseline" secondItem="uFd-Mm-pik" secondAttribute="firstBaseline" id="aIP-Fy-k1m"/>
+                            <constraint firstItem="OC2-Um-MfG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nVS-4E-Wz6"/>
+                            <constraint firstItem="kBO-RH-5WW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="uUf-UA-rU4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainview" destination="8bC-Xf-vdC" id="XeD-ni-TjZ"/>
+                        <outlet property="paperLabel" destination="Kyn-UB-Tlt" id="IYr-YU-mmf"/>
+                        <outlet property="playagainLabel" destination="kBO-RH-5WW" id="Tto-4g-2CS"/>
+                        <outlet property="rockLabel" destination="uFd-Mm-pik" id="ffz-8k-6Cq"/>
+                        <outlet property="scissorsLabel" destination="OC2-Um-MfG" id="5qi-8U-wVF"/>
+                        <outlet property="statusgameLabel" destination="Up1-PO-iDk" id="ZtT-n1-kpt"/>
+                        <outlet property="topmostLabel" destination="6hj-9b-WUM" id="8iK-5A-HXJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.384615384615387" y="-27.014218009478672"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
